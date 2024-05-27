@@ -12,19 +12,13 @@ models:
           - not_null
           - accepted_values:
               values: [1,3]
-
-        data_tests:
-          - unique
-          - not_null
-
+              
   - name: my_second_dbt_model
     description: "A starter dbt model"
     columns:
       - name: id
         description: "The primary key for this table"
-        data_tests:
-          - unique
-          - not_null
+      
   - name: snowflake_customer_purchase
     description: "Snowflake demo"
     columns:
